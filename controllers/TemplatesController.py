@@ -1,6 +1,8 @@
 from models.Template import Template
 from flask import jsonify
 import json
+
+
 class TemplateController:
   
     def create(template_name, subject, body):
