@@ -6,9 +6,9 @@ class UserController:
         if email not in User.objects:
             user = User(first_name=first_name, last_name=last_name, email=email, password=password)
             if user.save():
-                return 1
+                return 201
             else:
-                return 0
+                return 400
         else:
             return 222
     def login(email, password):
