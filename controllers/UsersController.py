@@ -1,6 +1,7 @@
 from models.Users import User
 from werkzeug.security import check_password_hash
 
+#user controller
 class UserController:
     def register(first_name, last_name, email, password):
         if email not in User.objects:
