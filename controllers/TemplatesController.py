@@ -52,9 +52,7 @@ class TemplateController:
             else:
                 return 0
         else:
-            return 404
-        
-    
+            return 404  
             
         
         
